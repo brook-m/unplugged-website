@@ -100,7 +100,7 @@ footer {
 /* Header Styles */
 
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -108,58 +108,57 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
-header .header-divider {
-
+.header-divider {
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  flex-flow: row wrap;
+  width: 100%;
 }
 
 /* Footer Styles */
 
-footer {
-
+footer p {
+  margin: 0;
 }
 
 footer .content-wrapper {
-
+  width: 55%;
+  margin: 50px 0;
 }
 
-footer .footer-content {
-
+footer .contact {
+  margin: 0 0 50px;
 }
-
-address .contact {
-
-}
-
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
 
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .copyright {
-
+  margin: 20px 0;
 }
 
 /*----- Mobile Styles - Home Page -----*/
@@ -172,10 +171,6 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-.hero-area .content-wrapper {
-
-}
-
 /* Aside Styles */
 
 aside {
@@ -183,18 +178,6 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-aside .content-wrapper {
-
-}
-
-.form-description {
-
-}
-
-.form {
-
 }
 
 /* Features Styles */
@@ -205,8 +188,13 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-.features .content-wrapper {
+.features h2 {
+  margin-bottom: 60px;
+}
 
+article .features {
+ width: 63%;
+ margin: 30px 0;
 }
 
 .features .features-items {
@@ -216,8 +204,8 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-article .features {
-
+.features p {
+  margin: 0;
 }
 
 article .fontawesome-icon {
@@ -236,14 +224,14 @@ article .features-item-description {
   flex-flow: row wrap;
 }
 
-.reviews .content-wrapper {
-
+.reviews h2 {
+  margin-bottom: 40px;
 }
 
-article .reviews {
-
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
-
 
 
 /*----- Mobile Styles - About Page -----*/
@@ -278,12 +266,8 @@ figure {
   flex-flow: row wrap;
 }
 
-.contact-section .content-wrapper {
-
-}
-
-.contact-content {
-
+.contact-content p {
+  margin: 0;
 }
 
 
@@ -302,10 +286,15 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0;
+}
+
+.faq h2 {
+  margin: 0 0 40px 0;
 }
 
 .faq-content {
-
+  margin: 0 0 50px 0;
 }
 
 
