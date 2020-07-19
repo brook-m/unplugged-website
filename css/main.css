@@ -436,7 +436,7 @@ article .features {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
 /* Reviews */
@@ -500,6 +500,10 @@ article .features {
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
+    header {
+      padding: 15px 0;
+    }
+
     .faq .content-wrapper {
         justify-content: space-between;
     }
@@ -519,7 +523,53 @@ article .features {
 /* General styles */
   .content-wrapper {
     max-width: 960px;
-    margin: 100px 0;
+  }
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+   /* Hero */
+    .hero-area h1 {
+        width: 60%;
+    }
+ 
+    /* Aside */
+    aside .content-wrapper {
+        justify-content: space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
+
+/* Features */
+    .features h2 {
+      width: 90%
+    }
+ 
+    .features article {
+      flex-basis: 33%;
+    }
+
+/* Reviews */
+    .reviews article div {
+      width: 42%
+    }
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 95%;
+    }
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+  .faq h2 {
+    width: 100%;
   }
 
 }
