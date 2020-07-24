@@ -129,6 +129,14 @@ p {
   line-height: 1.285;
 }
 
+img { 
+  width: 100%;
+}
+ 
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -161,6 +169,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -231,12 +247,15 @@ footer .copyright {
    Mobile Styles - Home Page
    ========================================================================== */
 
-/* Hero Styles */
+/* Hero */
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') no-repeat center #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap;  
 }
 
 .hero-area h1 {
@@ -246,7 +265,7 @@ footer .copyright {
   line-height: 1.2;
 }
 
-/* Aside Styles */
+/* Aside */
 
 aside {
   display: flex;
@@ -282,9 +301,11 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/* Features Styles */
+/* Features */
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') no-repeat center #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -294,7 +315,7 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
-article .features {
+.features article {
  width: 63%;
  margin: 30px 0;
 }
@@ -311,7 +332,7 @@ article .features {
   text-align: center;
 }
 
-/* Review Styles */
+/* Reviews */
 
 .reviews {
   display: flex;
@@ -479,7 +500,7 @@ article .features {
    ========================================================================== */
 
 @media screen and (min-width: 768px) {
-/*All Tablet styles here*/
+/*** All Tablet styles here ***/
 
 /* ==========================================================================
    Home Page
@@ -511,6 +532,10 @@ article .features {
     width: 100%;
     justify-content: space-between;
   }
+
+  header figure {
+    width: 30%;
+  }
  
   header nav {
     width: 20%;
@@ -525,6 +550,10 @@ article .features {
   }
 
 /* Hero-area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -573,6 +602,7 @@ article .features {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -612,13 +642,11 @@ article .features {
     width: 100%;
   }
 
-}
-
 /* ==========================================================================
    About Page
    ========================================================================== */
- 
-   .mission-content {
+
+  .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -664,9 +692,11 @@ article .features {
       font-size: .875em;
       line-height: 1.125;
     }
+}
+
 
 @media screen and (min-width: 1200px) {
-/*Desktop styles here*/
+/*** Desktop styles here ***/
 
 /* General styles */
 
@@ -698,7 +728,7 @@ article .features {
    /* Hero */
     .hero-area h1 {
       font-size: 3.75em;
-      width: 60%;
+      width: 80%;
     }
  
     /* Aside */
@@ -763,7 +793,6 @@ article .features {
       font-size: 1.125em;
       line-height: 1;
   }
-
 }
 
 /* ==========================================================================
